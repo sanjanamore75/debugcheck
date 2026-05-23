@@ -25,6 +25,7 @@ jobs:
         uses: subosito/flutter-action@v2
         with:
           channel: 'stable'
+          token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Install dependencies
         run: flutter pub get
